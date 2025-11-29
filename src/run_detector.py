@@ -1,5 +1,4 @@
 
-
 import cv2
 import numpy as np
 from ultralytics import YOLO
@@ -199,4 +198,5 @@ with open(json_file, "w") as f:
 cap.release()
 cv2.destroyAllWindows()
 print(f"[INFO] Detection finished. Violations saved at {json_file}")
+
 
