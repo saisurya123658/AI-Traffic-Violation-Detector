@@ -14,7 +14,6 @@ import os
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 
-
 # --- Load models ---
 print("[INFO] Loading YOLOv8 models...")
 model = YOLO("models/yolov8n.pt")       # vehicle/person detection
@@ -199,6 +198,7 @@ with open(json_file, "w") as f:
 cap.release()
 cv2.destroyAllWindows()
 print(f"[INFO] Detection finished. Violations saved at {json_file}")
+
 
 
 
