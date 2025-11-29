@@ -45,6 +45,7 @@ signal_roi = (500, 50, 550, 150)
 lane_lines = [200, 400]
 speed_limit = 30  # pixels/frame
 
+
 # --- Storage ---
 prev_centroids = {}
 prev_times = {}
@@ -197,6 +198,7 @@ with open(json_file, "w") as f:
 cap.release()
 cv2.destroyAllWindows()
 print(f"[INFO] Detection finished. Violations saved at {json_file}")
+
 
 
 
